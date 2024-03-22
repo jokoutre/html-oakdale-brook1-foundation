@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Base and Utilities */
+body {
+  font-family: 'Merriweather', serif; /* Provides a consistent base font */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header and Navigation */
+.site-header .navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.nav-link {
+  color: #000; /* Black text for navbar links */
+  font-family: 'Indie Flower', cursive; /* Elegant, readable serif font */
+    font-weight: bold; /* Make the font bold */
+  font-size: 20px; /* Increase the font size to 20px */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #003d82; /* Adjust as needed for hover/focus state */
+}
+
+/* Welcome Section */
+#welcome-section {
+  padding: 60px 0;
+  margin-bottom: 0;
+  background-image: linear-gradient(rgb(191, 2, 106), #50002c);
+  color: rgb(255, 204, 0);
+  text-align: center; /* Centering text */
+}
+
+/* Gradient Background for sections */
+.gradient-background {
+  background-image: linear-gradient(to bottom, #e6e5c7, #f5d313);
+}
+
+/* Section Adjustments */
+.about-section, .courses-section, .coops-section, .conversations-section {
+  padding: 40px 0;
+  font-family: 'Merriweather', serif; /* Consistent font for readability */
+}
+
+/* Styling for Headings and Buttons */
+h1, h2, h3, .btn {
+  font-family: 'Indie Flower', cursive; /* Handwriting-like font for a unique touch */
+  font-weight: bold; /* Making the text bold */
+}
+
+.btn {
+  background-color: #76b852; /* Example green color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #8DC26F; /* Lighter green on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #50002c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #ddd; /* Lighter grey on hover */
+}
+
+.fa {
+  font-size: 24px; /* Font Awesome icons size */
+}
+
+.footer span {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Fixed Video Play Button Container */
+.play-video-container {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1050;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px; /* Adjust logo size for smaller screens */
+  }
+}
+
+/* Slick Slider and Facilitator Content Styling */
+.facilitator-slider .facilitator-slide {
+  margin: 0 15px;
+  transition: transform 0.5s ease;
+}
+
+.facilitator-slider .facilitator-slide:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.facilitator-slider .facilitator-content {
+  background:  no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners for the slides */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+}
+html body .facilitator-slider .facilitator-content h3 {
+padding: 1%;
+  text-align: center;
+  font-family: 'Indie Flower', cursive !important;
+}
+
+
+.facilitator-slider .facilitator-content img {
+  width: 100%; /* Ensures image responsiveness */
+  max-width: 200px; /* Adjust this value to control the maximum width of the images */
+  height: auto; /* Keeps the aspect ratio of the images */
+  margin: 0 auto; /* Center the image within the slide */
+  display: block; /* Corrects any inline defaults */
+}
+
+
+.facilitator-slider .facilitator-content h3, .facilitator-slider .facilitator-content p {
+ 
+  font-family: 'Merriweather', serif;
+  text-align: left; /* Aligns text to the left */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Additional Styling for Hover Effects on Facilitator Images */
+.facilitator-slider .facilitator-content img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the Slick Slider Arrows for better visibility */
+.slick-prev:before, .slick-next:before {
+  color: black; /* Change the color of the arrows */
+}
+
+/* Adjustments for the responsive layout */
+@media (max-width: 768px) {
+  .facilitator-slider .facilitator-content {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(0,0,0,.1); /* Lighten the toggler icon */
+  }
+  
+  .nav-link {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+}
