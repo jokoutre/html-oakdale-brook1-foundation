@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="images/oakdale-logo-big.png.png" alt="Oakdale Brook Foundation Logo" height="80">
+              <img src="images/oakdale-logo-big.png" alt="Oakdale Brook Foundation Logo" height="80">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -29,16 +29,13 @@
                   <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#courses-section">Homeschool courses</a>
+                  <a class="nav-link" href="#our-programs">Our Programs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#coops-section">Homeschool coops</a>
+                  <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#conversations-section">Education conservations</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact-section">Contact</a>
+                  <a class="nav-link" href="#contact-section">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -48,50 +45,62 @@
 
     <div class="gradient-background">
 
-    <!-- Welcome Section (Hero) -->
-    <section id="welcome-section" class="text-center py-5">
+    <!-- Hero Section -->
+<section class="hero">
+    <!-- Desktop Hero Image -->
+    <img src="images/hero-banner-desktop.png" alt="Hero Image for Desktop" class="hero-image desktop-hero">
+
+    <!-- Mobile Hero Image -->
+    <img src="images/banner-mobile.png" alt="Hero Image for Mobile" class="hero-image mobile-hero">
+ </section>
+
+    <!-- Highlighted Categories Section -->
+    <section id="highlighted-categories" class="text-center py-5">
         <div class="container">
-          <div class="row align-items-center">
+          <h2>What We Do</h2>
+          <div class="row">
             <div class="col-md-4">
-              <img src="images/boy_smiling.png" alt="A smiling boy" class="img-fluid">
+              <h3>Home Education</h3>
+              <img src="images/arm-1.png" alt="icon" class="img-fluid w-75">
+              <p>Supporting homeschool co-ops and programs.</p>
             </div>
             <div class="col-md-4">
-            <h1>Welcome to Oakdale Brook Foundation</h1>
-            <p>Your journey to empowering education starts here.</p>
+              <h3>Mentorship</h3>
+              <img src="images/arm-2.png" alt="icon" class="img-fluid w-75">
+              <p>Guiding and supporting students and families.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Parent Support</h3>
+              <img src="images/arm-3.png" alt="icon" class="img-fluid w-75">
+              <p>Providing resources and support for parents.</p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="images/girl_smiling.png" alt="A smiling girl" class="img-fluid">
-          </div>
-          </div>
-      </div>
+        </div>
     </section>
 
     <!-- Three-Column Layout for Desktop -->
-    <section class="container py-5">
-        <div class="row">
+    <section id="our-programs" class="container py-5">
+        <div class="row three-columns">
             <!-- Left Column: Sidebar -->
-            <div class="col-md-3">
-                <!-- Sidebar content goes here -->
-                <div class="sidebar">
-                    <h3>Sidebar</h3>
-                    <p>Additional content, links, or widgets.</p>
-                </div>
+            <div class="col-md-3 sidebar">
+              <h3>Our Vision</h3>
+              <img src="images/children-chating.jpg" alt="children chatting" class="img-fluid w-75">
+              <p>To cultivate a generation of young people distinguished by their robust identity and resolute purpose.</p>
+              <h3>Our Core Values</h3>
+              <img src="images/children-chating.jpg" alt="children chatting" class="img-fluid w-75">
+              <p>The essence of our culture at Oakdale Brook is encapsulated in our ABCDE - Accountability, Birthing new ideas, Connections, Documentation of our journeys, and Empowerment of the youth, parents, and mentors. We are committed to excellence, innovation, building meaningful relationships, chronicling our shared experiences, and fostering growth and fulfillment within our community.</p>
+              <a href="about.html" class="btn btn-primary">Read More</a>
             </div>
 
             <!-- Center Column: Main Content -->
-            <div class="col-md-6">
-                <h3>Our Vision</h3>
-                <p>To cultivate a generation of young people distinguished by their robust identity and resolute purpose.</p>
+            <div class="col-md-6 main-content">
                 <h3>Our Mission</h3>
-                <p>To safeguard future generations and transform children's destinies through deep-rooted discipleship, dedicated mentorship, and extensive family support.</p>
-                <h3>Our Core Values</h3>
-                <p>The essence of our culture at Oakdale Brook is encapsulated in our ABCDE - Accountability, Birthing new ideas, Connections, Documentation of our journeys, and Empowerment of the youth, parents, and mentors. We are committed to excellence, innovation, building meaningful relationships, chronicling our shared experiences, and fostering growth and fulfillment within our community.</p>
-                <a href="about.html" class="btn btn-primary">Read More</a>
-                <img src="images/home-children.png" alt="children smiling" class="img-fluid w-75">
+                <p>To safeguard and preserve future generations through deep-rooted discipleship, dedicated mentorship, and extensive family support.</p>
+                <img src="images/children-chating.jpg" alt="children chatting" <img src="images/children-chating.jpg" alt="children chatting" class="img-fluid w-75">
             </div>
 
             <!-- Right Column: Call to Action and Ads -->
-            <div class="col-md-3">
+            <div class="col-md-3 cta-ads">
                 <div class="cta">
                     <h3>Call to Action</h3>
                     <p>Engage with our community initiatives.</p>
@@ -104,28 +113,29 @@
             </div>
         </div>
     </section>
-  </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer bg-primary text-white text-center py-3">
       <div class="container">
         <a href="https://www.instagram.com/yourusername" class="me-4 text-reset">
           <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.twitter.com/yourusername" class="me-4 text-reset">
+        </a>
+        <a href="https://www.twitter.com/yourusername" class="me-4 text-reset">
           <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/yourusername" class="me-4 text-reset">
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" class="me-4 text-reset">
           <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://www.facebook.com/yourusername" class="me-4 text-reset">
+        </a>
+        <a href="https://www.facebook.com/yourusername" class="me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
-      </a>
+        </a>
         <span>&copy; 2024 Oakdale Brook Foundation</span>
       </div>
     </footer>
 
-      <!-- Video Modal Structure -->
-      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <!-- Video Modal Structure -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
