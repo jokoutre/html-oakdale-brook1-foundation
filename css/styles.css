@@ -45,6 +45,84 @@ body {
   background-image: linear-gradient(to bottom, #e6e5c7, #f5d313);
 }
 
+/* Highlighted Categories Section */
+#highlighted-categories h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #50002c;
+}
+
+/* Hero Section */
+/* Base styles for the hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide by default */
+}
+
+/* Display the desktop hero image for screens wider than 768px */
+@media (min-width: 768px) {
+    .desktop-hero {
+        display: block;
+    }
+}
+
+/* Display the mobile hero image for screens smaller than 768px */
+@media (max-width: 767px) {
+    .mobile-hero {
+        display: block;
+    }
+}
+
+
+#highlighted-categories h3 {
+  font-family: 'Indie Flower', cursive;
+  color: #76b852;
+}
+
+/* Home Education Section */
+.home-education {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.home-education h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #333;
+}
+
+.home-education .category {
+  margin-bottom: 20px;
+}
+
+.home-education .category h3 {
+  font-family: 'Indie Flower', cursive;
+  color: #76b852;
+}
+
+/* Mission Statement Section */
+.mission-statement {
+  padding: 40px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.mission-statement h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #50002c;
+}
+
+.mission-statement p {
+  font-family: 'Merriweather', serif;
+  color: #333;
+}
+
 /* Three Column Layout for Desktop */
 @media (min-width: 992px) {
   .three-columns {
@@ -88,10 +166,30 @@ body {
   }
 }
 
-/* Section Adjustments */
-.about-section, .courses-section, .coops-section, .conversations-section {
-  padding: 40px 0;
-  font-family: 'Merriweather', serif; /* Consistent font for readability */
+/* Team and Coaches Section */
+.Team, .Coaches {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  grid-gap: 10px; /* Space between grid items */
+  margin-bottom: 40px; /* Space between sections */
+  text-align: center;
+}
+
+.Team img, .Coaches img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: Add rounded corners to images */
+  margin-bottom: 10px;
+}
+
+.Team h2, .Coaches h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #50002c;
+}
+
+.Coaches h3, .Team h3 {
+  font-family: 'Indie Flower', cursive;
+  color: #76b852;
 }
 
 /* Styling for Headings and Buttons */
@@ -225,26 +323,3 @@ h1, h2, h3, h4, .btn {
     font-size: 16px; /* Adjust font size for better readability */
   }
 }
-
-/* Grid Layout for Team and Coaches Sections */
-.Team, .Coaches {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column by default */
-  grid-gap: 10px; /* Space between grid items */
-  margin-bottom: 40px; /* Space between sections */
-}
-
-.Team img, .Coaches img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px; /* Optional: Add rounded corners to images */
-  margin-bottom: 10px;
-}
-
-/* Grid Layout for Desktop (Two Columns) */
-@media (min-width: 992px) {
-  .Team, .Coaches {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-  }
-}
-
