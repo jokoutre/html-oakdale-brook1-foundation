@@ -85,6 +85,130 @@ body {
   color: #76b852;
 }
 
+#container-maintain {
+  width: 90%;/* 1618px */
+  margin: 30px auto; /* Center the container */
+  overflow: hidden; /* Clear floats */
+}
+
+.container-maintain {
+  margin: 0 auto;
+  width: 96.29171817058096%; /* 1558/1618px */
+}
+
+/* Ensure the main content fits within the container */
+.Main-content {
+  float: left;
+  width: 65%; /* Adjust width to leave space for others-content */
+  margin-right: 5%;
+}
+
+/* Vision and Values sections */
+.vision, .Values {
+  float: left;
+  width: 47%; /* Adjust to ensure they fit together */
+  margin-right: 3%;
+}
+
+/* Mission and Video sections */
+.mission, .video {
+  float: left;
+  width: 47%; /* Adjust to ensure they fit together */
+  margin-right: 3%;
+}
+
+/* Remove the right margin from the last floated element */
+.Values:last-child,
+.video:last-child {
+  margin-right: 0;
+}
+
+/* Clearfix to ensure the Main-content wraps correctly */
+.Main-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* others-content on the right */
+.others-content {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+}
+
+/* Clearfix for the overall container */
+#container-maintain::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Categories {
+  width: 1024.14px;
+  margin: 0 auto; /* Center the Categories section within its parent */
+  overflow: hidden; /* Clear floats */
+}
+
+.home, .mentorship, .parent {
+  float: left; /* Float all three elements to the left */
+  width: 30%; /* Each takes up one-third of the 1066px width */
+
+}
+
+.home {
+  margin-right: 1%; /* Space between .home and .mentorship */
+}
+
+.mentorship {
+  margin-right: 1%; /* Space between .mentorship and .parent */
+}
+
+.parent {
+  margin-right: 0; /* No margin on the right */
+}
+
+/* Add space between sections */
+.container-vision-values,
+.container-mission-video,
+.Categories {
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .Main-content,
+  .others-content {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .vision, 
+  .Values, 
+  .mission, 
+  .video {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px; /* Add space between elements on small screens */
+  }
+
+  .Categories {
+      display: none; /* Hide the Categories section on small screens */
+  }
+}
+
+/* Adjust spacing for mobile */
+.container-vision-values,
+.container-mission-video,
+.Categories {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+
+
+
 /* Home Education Section */
 .home-education {
   padding: 40px 0;
@@ -121,49 +245,6 @@ body {
 .mission-statement p {
   font-family: 'Merriweather', serif;
   color: #333;
-}
-
-/* Three Column Layout for Desktop */
-@media (min-width: 992px) {
-  .three-columns {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Add space between columns and footer */
-  }
-
-  .sidebar {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .main-content {
-    flex: 2;
-    padding: 20px;
-  }
-
-  .cta-ads {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .ads {
-    margin-top: 20px;
-  }
-}
-
-/* Single Column Layout for Mobile */
-@media (max-width: 991px) {
-  .three-columns {
-    display: block;
-  }
-
-  .sidebar, .cta-ads {
-    display: none; /* Hide sidebar and ads on mobile */
-  }
-
-  .cta {
-    margin-top: 20px; /* Ensure CTA is visible below other content */
-  }
 }
 
 /* Team and Coaches Section */
@@ -258,56 +339,9 @@ h1, h2, h3, h4, .btn {
   z-index: 1050;
 }
 
-/* Slick Slider and Facilitator Content Styling */
-.facilitator-slider .facilitator-slide {
-  margin: 0 15px;
-  transition: transform 0.5s ease;
-}
 
-.facilitator-slider .facilitator-slide:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
-}
 
-.facilitator-slider .facilitator-content {
-  background: no-repeat center center;
-  background-size: cover;
-  padding: 20px;
-  border-radius: 5px; /* Rounded corners for the slides */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertically centers content */
-}
 
-.facilitator-slider .facilitator-content h3 {
-  padding: 1%;
-  text-align: center;
-  font-family: 'Indie Flower', cursive !important;
-}
-
-.facilitator-slider .facilitator-content img {
-  width: 100%; /* Ensures image responsiveness */
-  max-width: 200px; /* Adjust this value to control the maximum width of the images */
-  height: auto; /* Keeps the aspect ratio of the images */
-  margin: 0 auto; /* Center the image within the slide */
-  display: block; /* Corrects any inline defaults */
-}
-
-.facilitator-slider .facilitator-content h3, .facilitator-slider .facilitator-content p {
-  font-family: 'Merriweather', serif;
-  text-align: left; /* Aligns text to the left */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-}
-
-/* Additional Styling for Hover Effects on Facilitator Images */
-.facilitator-slider .facilitator-content img:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Styling for the Slick Slider Arrows for better visibility */
-.slick-prev:before, .slick-next:before {
-  color: black; /* Change the color of the arrows */
-}
 
 /* Adjustments for the responsive layout */
 @media (max-width: 768px) {
