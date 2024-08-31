@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* Ensure the hero image covers the full width of the viewport */
+.hero-image {
+    width: 100%;
+    height: auto; /* Adjusts height proportionally */
+    overflow: hidden;
+    position: relative; /* Allows positioning of the image inside */
+}
+
+.hero-image img {
+    width: 100%; /* Makes the image stretch to the full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any default spacing */
+}
+
+.navbar-brand img {
+    width: 50%; /* Or any percentage that fits your design */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+
+/* Container for the hero image */
+.hero-image {
+    width: 100%;
+    height: 280px; /* Set a fixed height, adjust as needed */
+    overflow: hidden; /* Ensures the image is cropped rather than shrunk */
+    position: relative;
+}
+
+/* Style the hero image to cover the container */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container and crops out excess parts */
+    object-position: center; /* Centers the image within the container */
+    display: block; /* Removes any default spacing */
+}
+
+
