@@ -1,32 +1,19 @@
 @charset "utf-8";
 /* Ensure the hero image covers the full width of the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 .hero-image {
-    width: 100%;
-    height: auto; /* Adjusts height proportionally */
-    overflow: hidden;
-    position: relative; /* Allows positioning of the image inside */
-}
-
-.hero-image img {
-    width: 100%; /* Makes the image stretch to the full width */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes any default spacing */
-}
-
-.navbar-brand img {
-    width: 50%; /* Or any percentage that fits your design */
-    height: auto; /* Ensures the aspect ratio is maintained */
-}
-
-/* Container for the hero image */
-.hero-image {
-    width: 100%;
-    height: 280px; /* Set a fixed height, adjust as needed */
-    overflow: hidden; /* Ensures the image is cropped rather than shrunk */
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 280px; /* Set a fixed height, adjust as needed */
 }
 
-/* Style the hero image to cover the container */
 .hero-image img {
     width: 100%;
     height: 100%;
@@ -35,4 +22,39 @@
     display: block; /* Removes any default spacing */
 }
 
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(238,194,66,0.85); /* Transparent yellow background */
+    padding: 20px;
+    border-radius: 10px 0px;
+    color: #000000;
+    max-width: 90%; /* Ensures the text box doesn't exceed the screen width */
+    box-sizing: border-box; /* Includes padding in the width */
+    text-decoration: none; /* Removes underline from the link */
+    display: block; /* Makes the entire .hero-text clickable */
+}
 
+.hero-text h2,
+.hero-text p {
+    margin: 0;
+    font-size: 1em;
+    color: inherit; /* Ensures text inherits color from .hero-text */
+}
+
+.hero-text p {
+    margin: 10px 0 0;
+    font-size: 0.5em;
+}
+
+.hero-text:hover {
+    background-color: rgba(255, 208, 0, 0.85); /* Transparent orange on hover */
+}
+
+.navbar-brand img {
+    width: 50%; /* Or any percentage that fits your design */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
