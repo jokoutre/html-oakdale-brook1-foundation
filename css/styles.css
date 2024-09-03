@@ -31,21 +31,27 @@ html, body {
     padding: 20px;
     border-radius: 10px;
     color: #000000;
-    max-width: 90%;
-    top: 61%;
+    max-width: 90%; /* Adjust this if necessary */
+    top: 50%; /* Adjust as needed for better centering */
     text-decoration: none;
     display: block;
+    margin-top: 39px;
+    box-sizing: border-box; /* Ensure padding is included in max-width */
 }
 
-/* Styles for heading and paragraph inside hero text */
+/* Styles for heading inside hero text */
 .hero-text h2 {
-    font-size: 25px; /* Adjust font size as needed */
-    font-family: 'Oswald', sans-serif; /* Font for heading */
+    font-size: 3rem; /* Increase font size */
+    font-family: 'Freckle Face', cursive; /* Font for heading */
     font-weight: 700; /* Bold text */
-    color: inherit; /* Inherits color from .hero-text */
-    margin: 0; /* Removes default margin */
+    color: inherit;
+    margin-right: -3px;
+    margin-left: -3px;
+    margin-bottom: -3px; /* Removes default margin */
+    line-height: 1; /* Adjust line height for better spacing */
 }
 
+/* Styles for paragraph inside hero text */
 .hero-text p {
     font-size: 16px; /* Adjust font size as needed */
     font-family: 'Merriweather', serif; /* Font for paragraph */
@@ -54,9 +60,11 @@ html, body {
     margin: 10px 0 0; /* Adjust margin as needed */
 }
 
+/* Hover effect */
 .hero-text:hover {
-    background-color: rgba(255,208,0,1.00); /* Transparent orange on hover */
+    background-color: rgba(255, 208, 0, 1.00); /* Transparent orange on hover */
 }
+
 
 h2 {
     font-family: 'Oswald', sans-serif;
@@ -140,13 +148,39 @@ h4 {
 .coaches-and-facilitators {
     color: #c40b0e;
 }
-.body-footer-div   {
+/* Footer Styling */
+footer {
+    background-color: #006800; /* Adjust the background color as needed */
+    padding: 20px;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    background-color: #0d6313;
-    height: 80px;
-    padding-top: 25px;
 }
+
+.body-footer-div {
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font */
+    color: #ffffff; /* Change font color as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #ffffff; /* Icon color */
+    font-size: 24px; /* Size of icons */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ffbc03; /* Change icon color on hover */
+}
+
+.social-icon i {
+    display: inline-block;
+}
+
 
 
 
