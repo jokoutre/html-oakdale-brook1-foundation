@@ -241,21 +241,21 @@ footer {
 
 /*mobile viewport*/
 @media (max-width: 400px){
-    .hero-image {
+    .hero-text-mobile {
         height: 300px; /* Slightly reduced height for mobile view */
     }
 
-    .hero-text {
+    .hero-text-mobile {
         top: 70%; /* Adjust the position to give enough space for the hero text */
         max-width: 80%; /* Slightly reduce the width on mobile */
         padding: 15px; /* Adjust padding for a better fit on mobile */
     }
 
-    .hero-text h2 {
+    .hero-text-h2-mobile {
         font-size: 20px; /* Slightly smaller font size for mobile */
     }
 
-    .hero-text p {
+    .hero-text-p-mobile {
         font-size: 14px; /* Slightly smaller font size for mobile */
     }
 
