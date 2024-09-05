@@ -7,6 +7,32 @@ html, body {
     font-family: 'Merriweather', serif; /* Apply Merriweather as the default font */
 }
 
+/* Apply Oswald font and green color to navbar links using !important */
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif !important;
+    color: green !important;
+}
+
+/* Force hover color to change using !important */
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 196, 0) !important;
+}
+
+
+/* Style dropdown menu items with Oswald font and green color */
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-family: 'Oswald', sans-serif !important;
+    color: green !important;
+}
+
+/* Change background color to orange when hovered */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: orange !important;
+    color: white !important; /* Optional: Change text color to white when hovered */
+}
+
+
+
 .hero-image {
     position: relative;
     width: 100%;
@@ -64,6 +90,7 @@ html, body {
 .hero-text:hover {
     background-color: rgba(255, 208, 0, 1.00); /* Transparent orange on hover */
 }
+
 
 
 h2 {
@@ -180,7 +207,22 @@ footer {
 .social-icon i {
     display: inline-block;
 }
+.col-xl-6 div .btn.btn-sm {
+    background-color: #f39c12; /* Orange background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: oswald;
+    margin-top: 12px;
+}
 
+.col-xl-6 div .btn.btn-sm:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+  color: #fff; /* Keep text white on hover */
+}
 
 
 
@@ -220,4 +262,5 @@ footer {
     .what-we-do > div {
         flex: 1 1 100%; /* Makes each div take up the full width on mobile */
     }
+
 }
