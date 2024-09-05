@@ -234,9 +234,11 @@ footer {
 
 
 
-/*Tablet viewport*/
-@media (min-width: 401px) and (max-width: 768px){
+/* Tablet viewport */
+@media (min-width: 401px) and (max-width: 768px) {
+
 }
+
 
 
 /*mobile viewport*/
