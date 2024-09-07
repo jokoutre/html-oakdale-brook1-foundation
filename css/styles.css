@@ -117,6 +117,8 @@ p {
     padding-top: 14px;
 }
 
+
+
 h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300; /* Regular weight for other h3s */
@@ -287,6 +289,99 @@ footer {
   color: #fff; /* Keep text white on hover */
 }
 
+/* CTA Text Styling */
+.cta-learn-more-text {
+    color: #006800; /* Desired text color */
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer; /* Make it clickable */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.cta-learn-more-text:hover {
+    color: #ff9800; /* Change text color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Vision Section Styling */
+#vision-div {
+    margin-top: 50px; /* Optional: add margin to create scrollable space */
+    padding-top: 19px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-bottom: 19px;
+    background-color: #A7FF9F;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.icon1-text {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+.icon {
+    margin-right: 18px; /* Add space between the icon and text */
+    width: 24px; /* Adjust the icon size as needed */
+    height: 24px;
+}
+
+.text {
+    font-size: 14px; /* Adjust text size */
+    font-family: 'Merriweather', serif;
+}
+.note-from-the-founder {
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+
+}
+.founder-note-space {
+    margin-top: 4px;
+    background-color: #FFD823;
+    border-bottom-left-radius: 34px;
+    border-top-right-radius: 34px;
+}
+.teamh3 {
+    font-size: 23px;
+}
+.teamh4 {
+    font-size: 20px;
+}
+.teamh41 {
+    font-size: 14px;
+}
+
+.founderh3 {
+    font-size: 35px;
+    color: #002257;
+}
+h5 {
+    font-family: oswald;
+    color: #010101;
+    background-color: #FFBC03;
+    border-radius: 7px;
+}
+.paragraph-slide {
+    background-color: #FFBC03;
+    border-radius: 7px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -307,13 +402,12 @@ footer {
 
 /*mobile viewport*/
 @media (max-width: 400px){
-    .hero-text-mobile {
-        height: 300px; /* Slightly reduced height for mobile view */
-    }
 
     .hero-text-h2-mobile {
         font-size: 20px; /* Slightly smaller font size for mobile */
     }
+
+
 
 
 
@@ -325,5 +419,6 @@ footer {
     .what-we-do > div {
         flex: 1 1 100%; /* Makes each div take up the full width on mobile */
     }
+
 
 }
