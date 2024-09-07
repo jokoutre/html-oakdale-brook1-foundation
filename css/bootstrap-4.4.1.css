@@ -369,6 +369,7 @@ h1, .h1 {
 h2, .h2 {
     font-size: 2rem;
     color: #EF0003;
+    padding-left: 0px;
 }
 
 h3, .h3 {
@@ -378,6 +379,10 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.5rem;
 }
+.row .col-xl-6 h4 {
+
+}
+
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -1560,6 +1565,10 @@ pre code {
     flex: 0 0 50%;
     max-width: 50%;
   }
+.col-xl-6 .row .col-xl-6-the-note {
+    background-color: #F7E6BD;
+}
+
   .col-xl-7 {
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
