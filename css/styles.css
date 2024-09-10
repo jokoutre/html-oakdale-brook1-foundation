@@ -369,6 +369,62 @@ h5 {
     border-radius: 7px;
     color: #000000;
 }
+.youth-at-oakdale-brook {
+    margin-top: 7px;
+}
+
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.cta-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cta-container h2 {
+  margin: 0 0 15px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: darkorange;
+}
+.desktop-h2 {
+    color: #FFFFFF;
+}
+.strong-mentorship {
+    color: #0062DD;
+}
+.strong-how-it-works {
+    color: #16640A;
+}
+
+
+
+
+
+
+
 
 
 
@@ -395,6 +451,18 @@ h5 {
 
 /* Tablet viewport */
 @media (min-width: 401px) and (max-width: 768px) {
+.mobile-h2 {
+    font-size: 16pt;
+    color: #FFFFFF;
+}
+.hero-img-container-mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
 
 }
 
@@ -419,6 +487,16 @@ h5 {
     .what-we-do > div {
         flex: 1 1 100%; /* Makes each div take up the full width on mobile */
     }
+	
+	.mobile-h2 {
+    font-size: 16pt;
+    color: #FFFFFF;
+}
+	
+.hero-img-container-mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}	
 
 
 }
